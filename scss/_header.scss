@@ -1,0 +1,36 @@
+.encabezado{
+    background-color: #F3F3F3;
+    border-bottom: #FFFFFF solid 3px;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    z-index: 1;
+
+}
+
+.fuentesNavBar{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+ .fuentesNavBar:after{
+    content: "";
+    position: absolute;
+    background-color: #e4e4e4;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+ }
+
+.fuentesNavBar:hover{
+    color:#4f4e4e;
+}
+
+.fuentesNavBar:hover:after{
+    width: 100%;
+ }

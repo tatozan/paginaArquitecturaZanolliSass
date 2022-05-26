@@ -1,12 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.encabezado {
+  background-color: #F3F3F3;
+  border-bottom: #FFFFFF solid 3px;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  z-index: 1; }
+
+.fuentesNavBar {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 10px; }
+
+.fuentesNavBar:after {
+  content: "";
+  position: absolute;
+  background-color: #e4e4e4;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s; }
+
+.fuentesNavBar:hover {
+  color: #4f4e4e; }
+
+.fuentesNavBar:hover:after {
+  width: 100%; }
+
+#inicio {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(../imagenes/inicio2.jpg);
+  /*background-size: contain; se asegura que la imagen se vea completa*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  /*height: 600px;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    background-image: url(/imagenes/inicio2.jpg);
+    max-width: 90%;
+    background-size: cover;
+    grid-area: inicio;
+    max-height: 90%;*/
+  padding-top: 5rem; }
+  #inicio .slogan {
+    font-size: 17px;
+    font-weight: normal;
+    color: black; }
+
+/************************************** ESTUDIO **************************************/
+.estudio {
+  background-color: white; }
+  .estudio .nuestroEquipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 2rem;*/ }
+    .estudio .nuestroEquipo h2 {
+      margin-top: 80px;
+      margin-bottom: 15px;
+      font-size: 30px; }
+    .estudio .nuestroEquipo .fraseNuestroEquipo {
+      font-size: 17px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      /*padding: 10px;*/
+      text-align: center; }
+    .estudio .nuestroEquipo .fraseNuestroEquipoContinuacion {
+      font-size: 17px;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      /*padding: 10px;*/
+      text-align: center; }
+  .estudio .datosPersona {
+    display: flex;
+    /* flex-direction por defecto esta en row, lo pongo para verlo explicito y recordar */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .estudio .datosPersona div .imagenPersona {
+      margin: 25px;
+      height: 300px; }
+    .estudio .datosPersona div .nombreTituloPersona {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+
+.proyecto1, .proyecto2, .proyecto3, .proyecto4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem; }
+
+.galeria1, .galeria2, .galeria3, .galeria4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.imagenGaleria {
+  max-width: 300px;
+  max-height: 300px; }
+
+.proyecto1 {
+  grid-area: proyecto1; }
+
+.proyecto2 {
+  grid-area: proyecto2; }
+
+.proyecto3 {
+  grid-area: proyecto3; }
+
+.proyecto4 {
+  grid-area: proyecto4; }
+
+.gridProyectos {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "proyecto2 proyecto3" "proyecto1 proyecto4" "footerProyectos footerProyectos"; }
+
+.contenedorArticulo {
+  border: 1px solid #878787;
+  border-top: 0;
+  padding: 20px; }
+  .contenedorArticulo .articulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 20px; }
+    .contenedorArticulo .articulo .contenedorImagenArticulo .imagenArticulo {
+      width: 320px;
+      height: 320px; }
+    .contenedorArticulo .articulo .textoContenedor {
+      padding-left: 10px; }
+      .contenedorArticulo .articulo .textoContenedor div .tituloArticulo {
+        text-align: left; }
+
+/************************************** CONTACTO **************************************/
+.contacto {
+  /*background-color: black;*/
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*padding: 150px;
+    margin: 90px 0px;*/
+  width: 100%; }
+  .contacto .formularioContacto {
+    background-color: white;
+    width: 50%;
+    min-width: 315px;
+    /*padding: 70px;*/
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 6%;
+    border-radius: 1.5%; }
+    .contacto .formularioContacto .tituloContacto {
+      padding-bottom: 60px; }
+    .contacto .formularioContacto form .formularioContactoCampos {
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      /*row-gap: 30px;*/ }
+      .contacto .formularioContacto form .formularioContactoCampos .etiquetaContacto {
+        text-align: left;
+        margin-top: 40px; }
+      .contacto .formularioContacto form .formularioContactoCampos .botonEnviarFormulario {
+        width: 30%;
+        padding: 5px;
+        margin: auto;
+        margin-top: 40px;
+        border: 0;
+        border-radius: 3%; }
+      .contacto .formularioContacto form .formularioContactoCampos .inputContacto {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: #b7b7b7; }
+        .contacto .formularioContacto form .formularioContactoCampos .inputContacto:focus {
+          /*quito cualquier valor por defecto del borde del input*/
+          outline: none;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          border-color: #72b7f4; }
+      .contacto .formularioContacto form .formularioContactoCampos .textAreaContacto {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: #b7b7b7; }
+        .contacto .formularioContacto form .formularioContactoCampos .textAreaContacto:focus {
+          outline: none;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          border-color: #72b7f4; }
+
+/* MEDIAS QUERIES */
+/* ESTABLEZCO TAMANO PARA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  /*.menuNavegacion{
+        display: none;
+    }*/
+  #inicio {
+    height: calc(100vh - 1500px);
+    background-size: cover;
+    /*background-size con porcentaje, primero ancho luego el alto*/
+    /*background-size: 100% 70%;*/ }
+  /************************************** ESTUDIO **************************************/
+  .estudio .nuestroEquipo .fraseNuestroEquipo {
+    max-width: 90%; }
+  .estudio .nuestroEquipo .fraseNuestroEquipoContinuacion {
+    max-width: 90%; }
+  .estudio .datosPersona {
+    flex-direction: column;
+    row-gap: 15px; }
+  /************************************** CONTACTO **************************************/
+  .contacto .formularioContacto {
+    padding-left: 15px;
+    padding-right: 15px; }
+  /************************************** NOVEDADES **************************************/
+  .contenedorArticulo .articulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorArticulo .articulo .textoContenedor {
+      padding-left: 0px; }
+      .contenedorArticulo .articulo .textoContenedor div .tituloArticulo {
+        text-align: center; }
+      .contenedorArticulo .articulo .textoContenedor div .textoArticuloNovedades {
+        text-align: justify; } }
 
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
-.encabezado{
+/*.encabezado{
     background-color: #F3F3F3;
     border-bottom: #FFFFFF solid 3px;
     position: sticky;
@@ -14,9 +260,8 @@
     padding: 15px;
     z-index: 1;
 
-}
-
-.fuentesNavBar{
+}*/
+/*.fuentesNavBar{
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -42,9 +287,9 @@
 .fuentesNavBar:hover:after{
     width: 100%;
  }
-
+*/
 /* INICIO */
-#inicio {
+/*#inicio {
     width: 100%;
     height: 800px;
     display: flex;
@@ -53,10 +298,10 @@
     text-align: center;
     background-image: url(../imagenes/inicio2.jpg);
     /*background-size: contain; se asegura que la imagen se vea completa*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-position: center;*/
-    /*height: 600px;
+/*background-size: cover;*/
+/*background-repeat: no-repeat;*/
+/*background-position: center;*/
+/*height: 600px;
     width: 100%;
     height: 900px;
     text-align: center;
@@ -65,343 +310,48 @@
     background-size: cover;
     grid-area: inicio;
     max-height: 90%;*/
-    padding-top: 5rem;
+/*padding-top: 5rem;
 
-}
-
-/* ESTUDIO */
-#estudio{
-    background-color: white;
-}
-
-.imagenPersona{
-    margin: 25px;
-    height: 300px;
-}
-
-.datosPersona{
-    display: flex;
-    /* flex-direction por defecto esta en row, lo pongo para verlo explicito y recordar */
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-
-}
-
-.nuestroEquipo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding-top: 2rem;*/
-
-}
-
-.nuestroEquipo h2{
-    margin-top: 80px;
-    margin-bottom: 15px;
-    font-size: 30px;
-}
-
-.fraseNuestroEquipo{
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    /*padding: 10px;*/
-    text-align: center;
-}
-
-.fraseNuestroEquipoContinuacion{
-    font-size: 17px;
-    margin-top: 5px;
-    margin-bottom: 40px;
-    /*padding: 10px;*/
-    text-align: center;
-}
-
-.nombreTituloPersona{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-h2{
-    font-size: 20px; 
-}
-
-body{
-    /*font-family: 'Roboto';*/
-    font-family: 'Lato', sans-serif;
-}
-
-.tituloPrincipal{
-    margin-top: 80px;
-    margin-bottom: 15px;
-    font-size: 30px;
-
-}
-
-.proyecto1, .proyecto2, .proyecto3, .proyecto4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-    
-}
-
-.galeria1, .galeria2, .galeria3, .galeria4{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-}
-.imagenGaleria{
-    max-width: 300px;
-    max-height: 300px;
-
-}
-
-.proyecto1{
-    grid-area: proyecto1;
-}
-
-.proyecto2{
-    grid-area: proyecto2;
-}
-
-.proyecto3{
-    grid-area: proyecto3;
-}
-
-.proyecto4{
-    grid-area: proyecto4;
-}
-
-.footerProyectos{
-    grid-area: footerProyectos;
-
-}
-.gridProyectos{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-    "proyecto2 proyecto3"
-    "proyecto1 proyecto4"
-    "footerProyectos footerProyectos";
-}
-
-legend{
-    font-size: 17px; 
-}
-
-.slogan{
+}*/
+/*.slogan{
     font-size: 17px;
     font-weight: normal;
     color: black;
 }
+*/
+h2 {
+  font-size: 20px; }
 
+body {
+  /*font-family: 'Roboto';*/
+  font-family: 'Lato', sans-serif; }
 
-/* FORMULARIO DE CONTACTO */
-#contacto{
-    /*background-color: black;*/
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /*padding: 150px;
-    margin: 90px 0px;*/
-    width: 100%;
-    
-}
+.tituloPrincipal {
+  margin-top: 80px;
+  margin-bottom: 15px;
+  font-size: 30px; }
 
-.seccionContacto{
-    margin: 0px 0px;
-    padding: 50px;
-}
+.footerProyectos {
+  grid-area: footerProyectos; }
 
-.formularioContacto{
-    background-color: white;
-    width: 50%;
-    min-width: 315px;
-    /*padding: 70px;*/
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 1%;
-    padding-bottom: 6%;
-    border-radius: 1.5%;
-}
+legend {
+  font-size: 17px; }
 
-.formularioContactoCampos{
-    display: flex;
-    flex-direction: column;
-    align-items:space-around;
-    /*row-gap: 30px;*/
+footer {
+  height: 110px;
+  margin-top: 80px;
+  padding: 10px;
+  background-color: #F3F3F3;
+  text-align: center;
+  padding-bottom: 115px; }
 
-}
+.redesSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
-.tituloContacto{
-    padding-bottom: 60px;
-}
-
-.etiquetaContacto{
-    text-align: left;
-    margin-top: 40px;
-}
-
-.inputContacto{
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color:#b7b7b7;
-    
-}
-
-.inputContacto:focus{
-    /*quito cualquier valor por defecto del borde del input*/
-    outline: none;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color:#72b7f4;
- 
-}
-
-.botonEnviarFormulario{
-
-    width: 30%;
-    padding: 5px;
-    margin: auto;
-    margin-top: 40px;
-    border: 0;
-    border-radius: 3%;
-}
-
-.textAreaContacto{
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color:#b7b7b7;
-}
-
-.textAreaContacto:focus{
-    outline: none;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color:#72b7f4;
-}
-
-
-.imagenArticulo{
-    width: 320px;
-    height: 320px;
-}
-
-.contenedorArticulo{
-    border: 1px solid rgb(135, 135, 135);
-    border-top: 0;
-    padding: 20px;
-}
-
-.articulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    row-gap: 20px;
-}
-
-.textoArticulo{
-   text-align:justify; 
-}
-
-.tituloArticulo{
-    text-align: left;
-}
-
-.textoContenedor{
-    padding-left: 10px;
-}
-
-
-footer{
-    height: 110px;
-    margin-top: 80px;
-    padding: 10px;
-    background-color: #F3F3F3;
-    text-align: center;
-}
-
-.redesSociales{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.redesIcon{
-    margin: 10px 20px;
-    height: 60px;
-    width: 60px;
- 
-}
-
-
-footer{
-    padding-bottom: 115px;
-}
-/* MEDIAS QUERIES */
-/* ESTABLEZCO TAMANO PARA CELULAR */
-@media screen and (min-width: 320px) and (max-width: 599px){
-    /*.menuNavegacion{
-        display: none;
-    }*/
-
-    #inicio{
-        height: calc(100vh - 1500px);
-        background-size: cover;
-        /*background-size con porcentaje, primero ancho luego el alto*/
-        /*background-size: 100% 70%;*/
-    }
-
-    .datosPersona{
-        flex-direction: column;
-        row-gap: 15px;
-    }
-
-    .fraseNuestroEquipo, .fraseNuestroEquipoContinuacion{
-        max-width: 90%
-    }
-
-    .formularioContacto{
-        padding-left: 15px;
-        padding-right: 15px;
-
-    }
-
-    /* NOVEDADES */
-    .articulo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .textoContenedor{
-        padding-left: 0px;
-    }
-    .tituloArticulo{
-        text-align: center;
-    }
-
-    .textoArticuloNovedades{
-        text-align: justify;
-    }
-
-
-}
+.redesIcon {
+  margin: 10px 20px;
+  height: 60px;
+  width: 60px; }

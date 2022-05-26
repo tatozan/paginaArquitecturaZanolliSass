@@ -1,0 +1,66 @@
+/* MEDIAS QUERIES */
+/* ESTABLEZCO TAMANO PARA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 599px){
+    /*.menuNavegacion{
+        display: none;
+    }*/
+
+    #inicio{
+        height: calc(100vh - 1500px);
+        background-size: cover;
+        /*background-size con porcentaje, primero ancho luego el alto*/
+        /*background-size: 100% 70%;*/
+    }
+
+/************************************** ESTUDIO **************************************/
+    .estudio{ 
+        .nuestroEquipo{
+            .fraseNuestroEquipo{
+                max-width: 90%;
+            }
+            .fraseNuestroEquipoContinuacion{
+                max-width: 90%;
+            }
+        }
+        .datosPersona{
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+
+
+/************************************** CONTACTO **************************************/
+    .contacto{
+        .formularioContacto{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+
+/************************************** NOVEDADES **************************************/
+    .contenedorArticulo{
+        .articulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .textoContenedor{
+                padding-left: 0px; 
+
+                div{ 
+                    .tituloArticulo{
+                        text-align: center;
+                    }
+                }
+                div{
+                    .textoArticuloNovedades{
+                        text-align: justify;
+                    }
+                }
+            }
+            
+        }
+    }   
+}

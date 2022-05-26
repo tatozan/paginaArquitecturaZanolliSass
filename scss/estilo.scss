@@ -1,0 +1,142 @@
+@import "header";
+@import "inicio";
+@import "estudio";
+@import "proyectos";
+@import "novedades";
+@import "contacto";
+@import "medias";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*.encabezado{
+    background-color: #F3F3F3;
+    border-bottom: #FFFFFF solid 3px;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    z-index: 1;
+
+}*/
+
+/*.fuentesNavBar{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+ .fuentesNavBar:after{
+    content: "";
+    position: absolute;
+    background-color: #e4e4e4;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+ }
+
+.fuentesNavBar:hover{
+    color:#4f4e4e;
+}
+
+.fuentesNavBar:hover:after{
+    width: 100%;
+ }
+*/
+/* INICIO */
+/*#inicio {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../imagenes/inicio2.jpg);
+    /*background-size: contain; se asegura que la imagen se vea completa*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*height: 600px;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    background-image: url(/imagenes/inicio2.jpg);
+    max-width: 90%;
+    background-size: cover;
+    grid-area: inicio;
+    max-height: 90%;*/
+    /*padding-top: 5rem;
+
+}*/
+
+/*.slogan{
+    font-size: 17px;
+    font-weight: normal;
+    color: black;
+}
+*/
+
+h2{
+    font-size: 20px; 
+}
+
+body{
+    /*font-family: 'Roboto';*/
+    font-family: 'Lato', sans-serif;
+}
+
+.tituloPrincipal{
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+
+
+.footerProyectos{
+    grid-area: footerProyectos;
+
+}
+
+
+legend{
+    font-size: 17px; 
+}
+
+footer{
+    height: 110px;
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #F3F3F3;
+    text-align: center;
+    padding-bottom: 115px;
+}
+
+.redesSociales{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redesIcon{
+    margin: 10px 20px;
+    height: 60px;
+    width: 60px;
+ 
+}

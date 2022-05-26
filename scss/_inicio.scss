@@ -1,0 +1,30 @@
+#inicio {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../imagenes/inicio2.jpg);
+    /*background-size: contain; se asegura que la imagen se vea completa*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    /*height: 600px;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    background-image: url(/imagenes/inicio2.jpg);
+    max-width: 90%;
+    background-size: cover;
+    grid-area: inicio;
+    max-height: 90%;*/
+    padding-top: 5rem;
+    
+    .slogan{
+        font-size: 17px;
+        font-weight: normal;
+        color: black;
+    }
+
+}

@@ -1,0 +1,36 @@
+
+.contenedorArticulo{
+    border: 1px solid rgb(135, 135, 135);
+    border-top: 0;
+    padding: 20px;
+
+    .articulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 20px;
+
+        .contenedorImagenArticulo{
+
+            .imagenArticulo{
+                width: 320px;
+                height: 320px;
+            }
+        }
+
+        .textoContenedor{
+            padding-left: 10px;
+
+            div{
+
+                .tituloArticulo{
+                    text-align: left;
+                }
+            }
+        }
+        
+
+    }
+}    
+
