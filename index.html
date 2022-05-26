@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Arquitectura</title>
+</head>
+
+<body>
+    <!-- MENU NAVEGACION-->
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./imagenes/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNavBar" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNavBar" aria-current="page" href="pages/estudio.html">Estudio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNavBar" aria-current="page" href="pages/proyectos.html">Proyectos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNavBar" aria-current="page" href="pages/novedades.html">Novedades</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNavBar" aria-current="page" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- HOME -->
+        <section id="inicio">
+            <h1 class="tituloPrincipal">NUESTRA VISIÓN</h1>
+            <p class="slogan">Diseñamos para el presente, con la conciencia del pasado, para un futuro desconocido. </p>            
+        </section>
+
+        <!-- ESTUDIO -->
+        <section id="estudio">
+            <!--data-aos="fade-down"-->
+            <div class="nuestroEquipo" data-aos="fade-down">
+                <h2>NUESTRO EQUIPO</h2>
+                <p class="fraseNuestroEquipo">Nos permitimos proyectar y construir con alta calidad, poniendo énfasis en los detalles.</p>
+                <p class="fraseNuestroEquipoContinuacion">Abordamos todas las fases de una obra de arquitectura.</p>            
+            </div>
+
+            <div class="datosPersona">
+                <div>
+                    <img class="imagenPersona" src="./imagenes/persona1.jpeg" alt="Nati">
+                    <div class="nombreTituloPersona">
+                        <h3 class="nombrePersona">Natalia Aranda</h3>
+                        <p class="tituloPersona">Arquitecta</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="imagenPersona" src="./imagenes/persona2.jpeg" alt="Nani">
+
+                    <div class="nombreTituloPersona">
+                        <h3 class="nombrePersona">Nestor Zanolli</h3>
+                        <p class="tituloPersona">Arquitecto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <div class="formularioContacto">
+                <h2 class="tituloPrincipal tituloContacto">CONTACTO</h2>
+                <form>
+                    <fieldset class="formularioContactoCampos">
+                        <!-- <legend>Formulario de contacto</legend> -->
+
+                        <label class= "etiquetaContacto" for="nombre">Nombre</label>
+                        <input class= "inputContacto" id="nombre" type="text"  placeholder="">
+
+                        <label class= "etiquetaContacto" for="correo_electronico">Correo Electrónico</label>
+                        <input class= "inputContacto" id="correo_electronico" type="text" placeholder= "" >
+
+                        <label class= "etiquetaContacto" for="">Mensaje</label>
+                        <textarea class="textAreaContacto" name="" id="" cols="30" rows="5"></textarea>
+
+                        <input class= "botonEnviarFormulario" type="submit" value="Enviar">
+
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="redesSociales">
+            <a href="https://www.facebook.com" target="_blank"><img class=" redesIcon" src="./imagenes/logo_face.png" alt="logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="redesIcon" src="./imagenes/logo_instagram.png" alt="logo"></a>
+        </div>
+
+        <p> Sitio web creado por Esteban Zanolli </p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    
+
+</body>
+
+</html>
