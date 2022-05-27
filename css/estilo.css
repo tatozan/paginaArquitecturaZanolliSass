@@ -13,22 +13,19 @@
   text-align: center;
   text-transform: uppercase;
   padding: 0 10px; }
-
-.fuentesNavBar:after {
-  content: "";
-  position: absolute;
-  background-color: #e4e4e4;
-  height: 3px;
-  width: 0%;
-  left: 0;
-  bottom: -10px;
-  transition: 0.3s; }
-
-.fuentesNavBar:hover {
-  color: #4f4e4e; }
-
-.fuentesNavBar:hover:after {
-  width: 100%; }
+  .fuentesNavBar:after {
+    content: "";
+    position: absolute;
+    background-color: #5e5e5e;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s; }
+  .fuentesNavBar:hover {
+    color: #717171; }
+    .fuentesNavBar:hover:after {
+      width: 100%; }
 
 #inicio {
   width: 100%;
@@ -55,7 +52,7 @@
   #inicio .slogan {
     font-size: 17px;
     font-weight: normal;
-    color: black; }
+    color: red; }
 
 /************************************** ESTUDIO **************************************/
 .estudio {
@@ -248,6 +245,7 @@
       .contenedorArticulo .articulo .textoContenedor div .textoArticuloNovedades {
         text-align: justify; } }
 
+/*HOLAAAAAAAAAAAAAAAAAAAAAAA*/
 * {
   margin: 0;
   padding: 0; }

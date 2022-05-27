@@ -13,24 +13,27 @@
     text-align: center;
     text-transform: uppercase;
     padding: 0 10px;
+
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: rgb(94, 94, 94);
+        height: 3px;
+        width: 0%;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s; 
+    }
+
+    &:hover{
+        color: rgb(113, 113, 113);
+
+        &:after{
+            width: 100%;
+         }
+    }
 }
 
- .fuentesNavBar:after{
-    content: "";
-    position: absolute;
-    background-color: #e4e4e4;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
 
- }
 
-.fuentesNavBar:hover{
-    color:#4f4e4e;
-}
 
-.fuentesNavBar:hover:after{
-    width: 100%;
- }
