@@ -1,6 +1,8 @@
 /************************************** CONTACTO **************************************/
+
 .contacto{
-    /*background-color: black;*/
+    background-image: url(../imagenes/contacto/7.jpg);
+    background-size:contain;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -20,6 +22,7 @@
         padding-top: 1%;
         padding-bottom: 6%;
         border-radius: 1.5%;
+        border: 2px solid rgb(178, 178, 178);
         
         .tituloContacto{
             padding-bottom: 60px;
@@ -38,6 +41,15 @@
                 }
 
                 .botonEnviarFormulario{
+                    width: 30%;
+                    padding: 5px;
+                    margin: auto;
+                    margin-top: 40px;
+                    border: 0;
+                    border-radius: 3%;
+                }
+
+                .botonBorrarFormulario{
                     width: 30%;
                     padding: 5px;
                     margin: auto;
@@ -82,3 +94,4 @@
     }
     
 }
+

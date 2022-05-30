@@ -1,47 +1,27 @@
-.proyecto1, .proyecto2, .proyecto3, .proyecto4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
+*{
+    box-sizing: border-box;
 }
 
-.galeria1, .galeria2, .galeria3, .galeria4{
+.bodyProyectos{
+    margin: 0;
+    padding: 0;
+}
+
+.filaGaleria{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    padding: 2px;
+    /*determino cuanto espacio ocupa el elemento flex dentro de su contenedor*/
+    width: 100%;
 }
 
 .imagenGaleria{
-    max-width: 300px;
-    max-height: 300px;
-
+    padding: 2px;
+    width: 100%
 }
 
-
-.proyecto1{
-    grid-area: proyecto1;
+.columnaGaleria{
+    flex: 33.33%;
 }
 
-.proyecto2{
-    grid-area: proyecto2;
-}
-
-.proyecto3{
-    grid-area: proyecto3;
-}
-
-.proyecto4{
-    grid-area: proyecto4;
-}
-
-.gridProyectos{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-    "proyecto2 proyecto3"
-    "proyecto1 proyecto4"
-    "footerProyectos footerProyectos";
-}

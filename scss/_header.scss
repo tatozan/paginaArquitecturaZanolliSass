@@ -17,7 +17,7 @@
     &:after{
         content: "";
         position: absolute;
-        background-color: rgb(94, 94, 94);
+        background-color: #dcdcdc;
         height: 3px;
         width: 0%;
         left: 0;
@@ -26,7 +26,7 @@
     }
 
     &:hover{
-        color: rgb(113, 113, 113);
+        color: #2F73B0;
 
         &:after{
             width: 100%;

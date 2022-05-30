@@ -1,3 +1,4 @@
+/*holaaaaaaaaaaaaaaaaaa*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 .encabezado {
@@ -16,14 +17,14 @@
   .fuentesNavBar:after {
     content: "";
     position: absolute;
-    background-color: #5e5e5e;
+    background-color: #dcdcdc;
     height: 3px;
     width: 0%;
     left: 0;
     bottom: -10px;
     transition: 0.3s; }
   .fuentesNavBar:hover {
-    color: #717171; }
+    color: #2F73B0; }
     .fuentesNavBar:hover:after {
       width: 100%; }
 
@@ -94,40 +95,27 @@
       align-items: center;
       justify-content: center; }
 
-.proyecto1, .proyecto2, .proyecto3, .proyecto4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10rem; }
+* {
+  box-sizing: border-box; }
 
-.galeria1, .galeria2, .galeria3, .galeria4 {
+.bodyProyectos {
+  margin: 0;
+  padding: 0; }
+
+.filaGaleria {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap;
+  padding: 2px;
+  /*determino cuanto espacio ocupa el elemento flex dentro de su contenedor*/
+  width: 100%; }
 
 .imagenGaleria {
-  max-width: 300px;
-  max-height: 300px; }
+  padding: 2px;
+  width: 100%; }
 
-.proyecto1 {
-  grid-area: proyecto1; }
-
-.proyecto2 {
-  grid-area: proyecto2; }
-
-.proyecto3 {
-  grid-area: proyecto3; }
-
-.proyecto4 {
-  grid-area: proyecto4; }
-
-.gridProyectos {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "proyecto2 proyecto3" "proyecto1 proyecto4" "footerProyectos footerProyectos"; }
+.columnaGaleria {
+  flex: 33.33%; }
 
 .contenedorArticulo {
   border: 1px solid #878787;
@@ -149,7 +137,8 @@
 
 /************************************** CONTACTO **************************************/
 .contacto {
-  /*background-color: black;*/
+  background-image: url(../imagenes/contacto/7.jpg);
+  background-size: contain;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -167,7 +156,8 @@
     padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 6%;
-    border-radius: 1.5%; }
+    border-radius: 1.5%;
+    border: 2px solid #b2b2b2; }
     .contacto .formularioContacto .tituloContacto {
       padding-bottom: 60px; }
     .contacto .formularioContacto form .formularioContactoCampos {
@@ -179,6 +169,13 @@
         text-align: left;
         margin-top: 40px; }
       .contacto .formularioContacto form .formularioContactoCampos .botonEnviarFormulario {
+        width: 30%;
+        padding: 5px;
+        margin: auto;
+        margin-top: 40px;
+        border: 0;
+        border-radius: 3%; }
+      .contacto .formularioContacto form .formularioContactoCampos .botonBorrarFormulario {
         width: 30%;
         padding: 5px;
         margin: auto;
@@ -228,6 +225,9 @@
   .estudio .datosPersona {
     flex-direction: column;
     row-gap: 15px; }
+  /************************************** PROYECTOS **************************************/
+  .columnaGaleria {
+    flex: 100%; }
   /************************************** CONTACTO **************************************/
   .contacto .formularioContacto {
     padding-left: 15px;
@@ -245,7 +245,12 @@
       .contenedorArticulo .articulo .textoContenedor div .textoArticuloNovedades {
         text-align: justify; } }
 
-/*HOLAAAAAAAAAAAAAAAAAAAAAAA*/
+/*Establezco medidas para medias queries pantallas grandes*/
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  /************************************** PROYECTOS **************************************/
+  .columnaGaleria {
+    flex: 50%; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -329,15 +334,9 @@ body {
   margin-bottom: 15px;
   font-size: 30px; }
 
-.footerProyectos {
-  grid-area: footerProyectos; }
-
-legend {
-  font-size: 17px; }
-
 footer {
   height: 110px;
-  margin-top: 80px;
+  margin-top: 5px;
   padding: 10px;
   background-color: #F3F3F3;
   text-align: center;
