@@ -1,6 +1,6 @@
 /************************************** ESTUDIO **************************************/
 .estudio{
-    background-color: white;
+    background-color: map-get($coloresSitio, blanco);
 
     .nuestroEquipo{
         display: flex;

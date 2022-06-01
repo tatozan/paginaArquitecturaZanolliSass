@@ -1,5 +1,5 @@
 .encabezado{
-    background-color: #F3F3F3;
+    background-color: map-get($coloresSitio, gris_claro);
     border-bottom: #FFFFFF solid 3px;
     position: sticky;
     top: 0;
@@ -26,7 +26,7 @@
     }
 
     &:hover{
-        color: #2F73B0;
+        color: map-get($coloresSitio, celeste_logo);
 
         &:after{
             width: 100%;
