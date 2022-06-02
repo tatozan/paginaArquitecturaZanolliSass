@@ -1,26 +1,59 @@
 /************************************** CONTACTO **************************************/
 .seccionContactoContenedor{
+    background-image: url(../imagenes/contacto/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 200px;
+
     .datosContacto{
-        flex: 50%;
-        .fraseMantenteEnContacto, .textoContacto, .tituloTextoContacto{
+        /*flex: 40%;*/
+        padding: 50px 30px;
+        .fraseMantenteEnContacto{
+            font-weight: bold;
+            font-size: 2.3rem;
+            color: map-get($coloresSitio, celeste_logo);
             width: 100%;
+            margin-bottom: 17px;
+        }
+        
+        .textoContacto{
+            color: map-get($coloresSitio, gris_claro2);
+            font-size: 1.1rem;
+            width: 100%;
+            margin-bottom: 33px;
+        }
+        
+        .tituloTextoContacto{
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: map-get($coloresSitio, celeste_logo);
+            width: 100%;
+            margin-bottom: 19px;
         }
     }
 
     .formularioContacto{
-        flex: 50%;
-        border: 2px solid map-get($coloresSitio, gris_claro2);
+        background-color: white;
+        box-sizing: border-box;
+        width: 45%;
+        /*flex: 60%;*/
+        border: 2px solid map-get($coloresSitio, blanco);
+        border-radius: 20px;
+        padding: 50px 30px;
+
         .tituloContacto{
+            text-align: center;
+            font-size: 1.4rem;
             width: 100%;
         }
     }
 }
+
 
 .formularioContactoCampos{
     /*display: flex;
@@ -29,27 +62,32 @@
     /*row-gap: 30px;*/
 
     .etiquetaContacto{
+        color: map-get($coloresSitio, gris_claro2);
         width: 100%;
         text-align: left;
         margin-top: 40px;
     }
 
     .botonEnviarFormulario{
-        width: 30%;
+        color: black;
+        background-color: linear-gradient(4deg, rgba(226,15,230,1) 0%, rgba(47,115,176,1) 99%);
+        width: 20%;
         padding: 5px;
         margin: auto;
         margin-top: 40px;
         border: 0;
-        border-radius: 3%;
+        border-radius: 15px;
     }
 
     .botonBorrarFormulario{
-        width: 30%;
+        color: black;
+        border-color: map-get($coloresSitio, celeste_logo);
+        width: 20%;
         padding: 5px;
         margin: auto;
         margin-top: 40px;
         border: 0;
-        border-radius: 3%;
+        border-radius: 15px;
     }
 
     .inputContacto{
@@ -65,7 +103,7 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            border-color: map-get($coloresSitio, celeste_logo);
+            border-color: map-get($coloresSitio, celeste_logo);;
         }                    
     }   
 
