@@ -1,30 +1,20 @@
 #inicio {
     width: 100%;
-    height: 800px;
+    height: calc(100vh - 105px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-image: url(../imagenes/inicio2.jpg);
     /*background-size: contain; se asegura que la imagen se vea completa*/
-    background-size: cover;
+    /*background-size: 100% 100%;*/
     background-repeat: no-repeat;
-    /*background-position: center;*/
-    /*height: 600px;
-    width: 100%;
-    height: 900px;
-    text-align: center;
-    background-image: url(/imagenes/inicio2.jpg);
-    max-width: 90%;
-    background-size: cover;
-    grid-area: inicio;
-    max-height: 90%;*/
-    padding-top: 5rem;
+    /*padding-top: 5rem;*/
     
     .slogan{
         font-size: 17px;
-        font-weight: normal;
-        color: $color_fuente_titulo;
+        font-weight: 400;
+        color: map-get($coloresSitio, gris_claro2);
     }
 
 }

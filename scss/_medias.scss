@@ -1,15 +1,16 @@
 /* MEDIAS QUERIES */
 /* ESTABLEZCO TAMANO PARA CELULAR */
 @media screen and (min-width: 320px) and (max-width: 599px){
-    /*.menuNavegacion{
-        display: none;
-    }*/
 
+/************************************** INICIO **************************************/
     #inicio{
-        height: calc(100vh - 1500px);
-        background-size: cover;
-        /*background-size con porcentaje, primero ancho luego el alto*/
-        /*background-size: 100% 70%;*/
+        background-size: contain;
+        height: 500px;
+
+        .tituloPrincipal{
+            padding-top: 0rem;
+            margin-top: 0px;
+        }
     }
 
 /************************************** ESTUDIO **************************************/
@@ -24,7 +25,7 @@
         }
         .datosPersona{
             flex-direction: column;
-            row-gap: 15px;
+            row-gap: 30px;
         }
     }
 
@@ -33,14 +34,33 @@
         flex: 100%;
     }
 /************************************** CONTACTO **************************************/
-    .contacto{
+
+    .seccionContactoContenedor{
+        background-image: none;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .datosContacto{
+            padding: 0px 0px;
+            .fraseMantenteEnContacto{
+                margin-top: 40px;
+            }
+
+            .contenedorRedesSociales{
+                width: 100%;
+                justify-content: center;
+                
+            }
+        }
+
         .formularioContacto{
-            padding-left: 15px;
-            padding-right: 15px;
+            width: 100%;
+            border: none;
+            margin: 0;
         }
     }
 
-
+        
 /************************************** NOVEDADES **************************************/
     .contenedorArticulo{
         .articulo{

@@ -1,4 +1,24 @@
+h2{
+    color: map-get($coloresSitio, gris_oscuro)
+}
+
 h3{
     font-size: 1.1rem;
 
+}
+
+.tituloPrincipal{
+    font-weight: 600;
+    color: map-get($coloresSitio, gris_oscuro);
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+p{
+    color: map-get($coloresSitio, gris_claro2);
+}
+
+.separadorDeSeccion{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

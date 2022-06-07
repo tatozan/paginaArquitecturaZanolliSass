@@ -1,6 +1,6 @@
 /*holaaaaaaaaaaaaaaaaaa*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*$color_fuente_titulo: red;*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .encabezado {
   background-color: #F3F3F3;
   border-bottom: #FFFFFF solid 3px;
@@ -30,30 +30,49 @@
 
 #inicio {
   width: 100%;
-  height: 800px;
+  height: calc(100vh - 105px);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-image: url(../imagenes/inicio2.jpg);
   /*background-size: contain; se asegura que la imagen se vea completa*/
-  background-size: cover;
+  /*background-size: 100% 100%;*/
   background-repeat: no-repeat;
-  /*background-position: center;*/
-  /*height: 600px;
-    width: 100%;
-    height: 900px;
-    text-align: center;
-    background-image: url(/imagenes/inicio2.jpg);
-    max-width: 90%;
-    background-size: cover;
-    grid-area: inicio;
-    max-height: 90%;*/
-  padding-top: 5rem; }
+  /*padding-top: 5rem;*/ }
   #inicio .slogan {
     font-size: 17px;
-    font-weight: normal;
-    color: red; }
+    font-weight: 400;
+    color: #7a7a7a; }
+
+.fotoPersonaOpinion {
+  width: 50%;
+  padding-top: 25%;
+  padding-bottom: 25%; }
+
+.tituloNuestrosClientes {
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 6%;
+  /*padding-bottom: 25px;    
+    padding-top: 100px;*/ }
+
+.columnaOpinionPersona {
+  box-shadow: #F3F3F3 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: white;
+  margin: 1%; }
+
+.seccionOpiniones {
+  height: calc(100vh + 150px);
+  background-image: url(../imagenes/opiniones/2.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+
+.nombrePersonaOpinion {
+  padding-bottom: 20%; }
 
 /************************************** ESTUDIO **************************************/
 .estudio {
@@ -85,15 +104,30 @@
     /* flex-direction por defecto esta en row, lo pongo para verlo explicito y recordar */
     flex-direction: row;
     justify-content: center;
-    align-items: center; }
-    .estudio .datosPersona div .imagenPersona {
-      margin: 25px;
-      height: 300px; }
-    .estudio .datosPersona div .nombreTituloPersona {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+    align-items: center;
+    gap: 30px; }
+    .estudio .datosPersona .contenedorPersona {
+      /*border: 1px solid map-get($coloresSitio, gris_claro);*/
+      box-shadow: #F3F3F3 0px 7px 29px 0px;
+      border-radius: 20px;
+      padding-bottom: 30px; }
+      .estudio .datosPersona .contenedorPersona .imagenPersona {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding-bottom: 10px;
+        height: 300px; }
+      .estudio .datosPersona .contenedorPersona .nombreTituloPersona {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .estudio .datosPersona .contenedorPersona .nombreTituloPersona .contenedorRedesSocialesPersona {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly; }
+        .estudio .datosPersona .contenedorPersona .nombreTituloPersona .iconoRedesEstudio {
+          height: 40px;
+          width: 40px; }
 
 * {
   box-sizing: border-box; }
@@ -142,42 +176,61 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
-  justify-content: space-evenly;
-  padding: 200px; }
+  justify-content: center;
+  align-items: center;
+  padding: 6% 18%; }
   .seccionContactoContenedor .datosContacto {
+    width: 100%;
     /*flex: 40%;*/
-    padding: 50px 30px; }
+    /*padding: 50px 30px;*/
+    padding-right: 30px;
+    padding-left: 10px; }
     .seccionContactoContenedor .datosContacto .fraseMantenteEnContacto {
       font-weight: bold;
       font-size: 2.3rem;
       color: #2F73B0;
       width: 100%;
-      margin-bottom: 17px; }
+      margin-top: 90px;
+      /*margin-bottom: 17px;*/ }
     .seccionContactoContenedor .datosContacto .textoContacto {
       color: #7a7a7a;
       font-size: 1.1rem;
-      width: 100%;
-      margin-bottom: 33px; }
+      width: 100%; }
     .seccionContactoContenedor .datosContacto .tituloTextoContacto {
       font-weight: bold;
       font-size: 1.1rem;
       color: #2F73B0;
-      width: 100%;
-      margin-bottom: 19px; }
+      width: 100%; }
+    .seccionContactoContenedor .datosContacto .contenedorRedesSociales {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-top: 2px solid #F3F3F3; }
+      .seccionContactoContenedor .datosContacto .contenedorRedesSociales .enlaceRedesSociales .iconoRedes {
+        margin: 15px;
+        width: 50px;
+        height: 50px; }
   .seccionContactoContenedor .formularioContacto {
+    margin-right: 10px;
+    padding: 70px 3%;
+    height: 550px;
     background-color: white;
-    box-sizing: border-box;
-    width: 45%;
+    /*width: 45%;*/
     /*flex: 60%;*/
-    border: 2px solid white;
+    box-shadow: white 0px 7px 29px 0px;
     border-radius: 20px;
-    padding: 50px 30px; }
+    /*padding: 50px 30px;*/
+    /*margin-left: 90px;*/
+    min-width: 315px; }
     .seccionContactoContenedor .formularioContacto .tituloContacto {
+      padding-top: 40x;
+      padding-bottom: 20px;
       text-align: center;
       font-size: 1.4rem;
-      width: 100%; }
+      /*width: 100%;*/ }
 
 .formularioContactoCampos {
   /*display: flex;
@@ -186,7 +239,7 @@
   /*row-gap: 30px;*/ }
   .formularioContactoCampos .etiquetaContacto {
     color: #7a7a7a;
-    width: 100%;
+    /*width: 100%;*/
     text-align: left;
     margin-top: 40px; }
   .formularioContactoCampos .botonEnviarFormulario {
@@ -233,20 +286,35 @@
       border-right: 0;
       border-color: #2F73B0; }
 
+h2 {
+  color: #4a4a4a; }
+
 h3 {
   font-size: 1.1rem; }
+
+.tituloPrincipal {
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  font-size: 30px; }
+
+p {
+  color: #7a7a7a; }
+
+.separadorDeSeccion {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 /* MEDIAS QUERIES */
 /* ESTABLEZCO TAMANO PARA CELULAR */
 @media screen and (min-width: 320px) and (max-width: 599px) {
-  /*.menuNavegacion{
-        display: none;
-    }*/
+  /************************************** INICIO **************************************/
   #inicio {
-    height: calc(100vh - 1500px);
-    background-size: cover;
-    /*background-size con porcentaje, primero ancho luego el alto*/
-    /*background-size: 100% 70%;*/ }
+    background-size: contain;
+    height: 500px; }
+    #inicio .tituloPrincipal {
+      padding-top: 0rem;
+      margin-top: 0px; }
   /************************************** ESTUDIO **************************************/
   .estudio .nuestroEquipo .fraseNuestroEquipo {
     max-width: 90%; }
@@ -254,14 +322,26 @@ h3 {
     max-width: 90%; }
   .estudio .datosPersona {
     flex-direction: column;
-    row-gap: 15px; }
+    row-gap: 30px; }
   /************************************** PROYECTOS **************************************/
   .columnaGaleria {
     flex: 100%; }
   /************************************** CONTACTO **************************************/
-  .contacto .formularioContacto {
-    padding-left: 15px;
-    padding-right: 15px; }
+  .seccionContactoContenedor {
+    background-image: none;
+    flex-wrap: wrap;
+    width: 100%; }
+    .seccionContactoContenedor .datosContacto {
+      padding: 0px 0px; }
+      .seccionContactoContenedor .datosContacto .fraseMantenteEnContacto {
+        margin-top: 40px; }
+      .seccionContactoContenedor .datosContacto .contenedorRedesSociales {
+        width: 100%;
+        justify-content: center; }
+    .seccionContactoContenedor .formularioContacto {
+      width: 100%;
+      border: none;
+      margin: 0; }
   /************************************** NOVEDADES **************************************/
   .contenedorArticulo .articulo {
     display: flex;
@@ -281,88 +361,18 @@ h3 {
   .columnaGaleria {
     flex: 50%; } }
 
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
 * {
   margin: 0;
   padding: 0; }
 
-/*.encabezado{
-    background-color: #F3F3F3;
-    border-bottom: #FFFFFF solid 3px;
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    z-index: 1;
-
-}*/
-/*.fuentesNavBar{
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0 10px;
-}
-
- .fuentesNavBar:after{
-    content: "";
-    position: absolute;
-    background-color: #e4e4e4;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-
- }
-
-.fuentesNavBar:hover{
-    color:#4f4e4e;
-}
-
-.fuentesNavBar:hover:after{
-    width: 100%;
- }
-*/
-/* INICIO */
-/*#inicio {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-image: url(../imagenes/inicio2.jpg);
-    /*background-size: contain; se asegura que la imagen se vea completa*/
-/*background-size: cover;*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*height: 600px;
-    width: 100%;
-    height: 900px;
-    text-align: center;
-    background-image: url(/imagenes/inicio2.jpg);
-    max-width: 90%;
-    background-size: cover;
-    grid-area: inicio;
-    max-height: 90%;*/
-/*padding-top: 5rem;
-
-}*/
-/*.slogan{
-    font-size: 17px;
-    font-weight: normal;
-    color: black;
-}
-*/
 h2 {
   font-size: 20px; }
 
 body {
   /*font-family: 'Roboto';*/
-  font-family: 'Lato', sans-serif; }
-
-.tituloPrincipal {
-  margin-top: 80px;
-  margin-bottom: 15px;
-  font-size: 30px; }
+  font-family: 'Poppins', sans-serif; }
 
 footer {
   height: 110px;

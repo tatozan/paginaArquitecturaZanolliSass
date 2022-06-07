@@ -5,27 +5,31 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
-    justify-content: space-evenly;
-    padding: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 18%;
 
     .datosContacto{
+        width: 100%;
         /*flex: 40%;*/
-        padding: 50px 30px;
+        /*padding: 50px 30px;*/
+        padding-right: 30px;
+        padding-left: 10px;
         .fraseMantenteEnContacto{
-            font-weight: bold;
+            font-weight:bold;
             font-size: 2.3rem;
             color: map-get($coloresSitio, celeste_logo);
             width: 100%;
-            margin-bottom: 17px;
+            margin-top: 90px;
+            /*margin-bottom: 17px;*/
         }
         
         .textoContacto{
             color: map-get($coloresSitio, gris_claro2);
             font-size: 1.1rem;
             width: 100%;
-            margin-bottom: 33px;
         }
         
         .tituloTextoContacto{
@@ -33,23 +37,43 @@
             font-size: 1.1rem;
             color: map-get($coloresSitio, celeste_logo);
             width: 100%;
-            margin-bottom: 19px;
         }
+        .contenedorRedesSociales{
+            width: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-top: 2px solid map-get($coloresSitio, gris_claro);
+            .enlaceRedesSociales{
+                .iconoRedes{
+                    margin: 15px;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }   
+
     }
 
     .formularioContacto{
+        margin-right: 10px;
+        padding: 70px 3%;
+        height: 550px;
         background-color: white;
-        box-sizing: border-box;
-        width: 45%;
+        /*width: 45%;*/
         /*flex: 60%;*/
-        border: 2px solid map-get($coloresSitio, blanco);
+        box-shadow: map-get($coloresSitio, blanco) 0px 7px 29px 0px;
         border-radius: 20px;
-        padding: 50px 30px;
+        /*padding: 50px 30px;*/
+        /*margin-left: 90px;*/
+        min-width: 315px;
 
         .tituloContacto{
+            padding-top: 40x;
+            padding-bottom: 20px;
             text-align: center;
             font-size: 1.4rem;
-            width: 100%;
+            /*width: 100%;*/
         }
     }
 }
@@ -63,7 +87,7 @@
 
     .etiquetaContacto{
         color: map-get($coloresSitio, gris_claro2);
-        width: 100%;
+        /*width: 100%;*/
         text-align: left;
         margin-top: 40px;
     }

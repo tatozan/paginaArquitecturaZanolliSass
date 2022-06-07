@@ -38,10 +38,19 @@
         flex-direction: row; 
         justify-content: center;
         align-items: center; 
+        gap: 30px;
         
-        div{
+        .contenedorPersona{
+
+            /*border: 1px solid map-get($coloresSitio, gris_claro);*/
+            box-shadow: map-get($coloresSitio, gris_claro) 0px 7px 29px 0px;
+            border-radius: 20px;
+            padding-bottom: 30px;
+
             .imagenPersona{
-                margin: 25px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding-bottom: 10px;
                 height: 300px;
             }
             
@@ -50,6 +59,18 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
+                .contenedorRedesSocialesPersona{
+                    width: 100%;
+                    display: flex;
+                    justify-content:space-evenly;
+                }
+
+                .iconoRedesEstudio{
+                    height:40px;
+                    width: 40px;
+
+                }
             }
         }
     }
