@@ -36,6 +36,7 @@
   align-items: center;
   text-align: center;
   background-image: url(../imagenes/inicio2.jpg);
+  background-size: cover;
   /*background-size: contain; se asegura que la imagen se vea completa*/
   /*background-size: 100% 100%;*/
   background-repeat: no-repeat;
@@ -45,18 +46,6 @@
     font-weight: 400;
     color: #7a7a7a; }
 
-.fotoPersonaOpinion {
-  width: 50%;
-  padding-top: 25%;
-  padding-bottom: 25%; }
-
-.tituloNuestrosClientes {
-  text-align: center;
-  padding-bottom: 1%;
-  padding-top: 6%;
-  /*padding-bottom: 25px;    
-    padding-top: 100px;*/ }
-
 .columnaOpinionPersona {
   box-shadow: #F3F3F3 0px 7px 29px 0px;
   border-radius: 20px;
@@ -64,15 +53,25 @@
   text-align: center;
   background-color: white;
   margin: 1%; }
+  .columnaOpinionPersona .fotoPersonaOpinion {
+    width: 50%;
+    padding-top: 25%;
+    padding-bottom: 25%; }
+  .columnaOpinionPersona .nombrePersonaOpinion {
+    padding-bottom: 20%; }
 
 .seccionOpiniones {
-  height: calc(100vh + 150px);
+  /*height: calc(100vh + 150px);*/
   background-image: url(../imagenes/opiniones/2.jpg);
   background-attachment: fixed;
-  background-size: cover; }
-
-.nombrePersonaOpinion {
-  padding-bottom: 20%; }
+  background-size: cover;
+  padding-bottom: 30px; }
+  .seccionOpiniones .tituloNuestrosClientes {
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 6%;
+    /*padding-bottom: 25px;    
+        padding-top: 100px;*/ }
 
 /************************************** ESTUDIO **************************************/
 .estudio {
@@ -311,7 +310,7 @@ p {
   /************************************** INICIO **************************************/
   #inicio {
     background-size: contain;
-    height: 500px; }
+    height: 200px; }
     #inicio .tituloPrincipal {
       padding-top: 0rem;
       margin-top: 0px; }
@@ -360,6 +359,33 @@ p {
   /************************************** PROYECTOS **************************************/
   .columnaGaleria {
     flex: 50%; } }
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  /************************************** OPINIONES **************************************/
+  .columnaOpinionPersona {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom: 30px; }
+    .columnaOpinionPersona .fotoPersonaOpinion {
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 40%; }
+    .columnaOpinionPersona .nombrePersonaOpinion {
+      /*padding-bottom: 20%;*/
+      padding-bottom: 0;
+      width: 40%; }
+    .columnaOpinionPersona .textoPersonaOpinion {
+      text-align: center;
+      width: 100%;
+      margin-top: 8%; }
+  .seccionOpiniones {
+    background-image: none;
+    height: max-content; } }
 
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/

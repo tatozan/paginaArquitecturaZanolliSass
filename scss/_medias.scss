@@ -5,7 +5,7 @@
 /************************************** INICIO **************************************/
     #inicio{
         background-size: contain;
-        height: 500px;
+        height: 200px;
 
         .tituloPrincipal{
             padding-top: 0rem;
@@ -93,5 +93,45 @@
 /************************************** PROYECTOS **************************************/
     .columnaGaleria{
         flex: 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px){
+
+/************************************** OPINIONES **************************************/
+
+    .columnaOpinionPersona{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        margin-bottom: 30px;
+
+        .fotoPersonaOpinion{
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 40%;
+        }
+
+        .nombrePersonaOpinion{
+            /*padding-bottom: 20%;*/
+            padding-bottom: 0;
+            width: 40%;
+
+        }
+
+        .textoPersonaOpinion{
+            text-align: center;
+            width: 100%;
+            margin-top: 8%;
+        }
+    }
+
+    .seccionOpiniones{
+        background-image: none;
+        height:max-content;
     }
 }

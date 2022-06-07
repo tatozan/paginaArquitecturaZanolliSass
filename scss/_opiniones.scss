@@ -1,16 +1,3 @@
-.fotoPersonaOpinion{
-    width: 50%;
-    padding-top: 25%;
-    padding-bottom: 25%;
-}
-
-.tituloNuestrosClientes{
-    text-align: center;
-    padding-bottom: 1%;    
-    padding-top: 6%;
-     /*padding-bottom: 25px;    
-    padding-top: 100px;*/
-}
 
 .columnaOpinionPersona{
     box-shadow: map-get($coloresSitio, gris_claro) 0px 7px 29px 0px;
@@ -19,15 +6,32 @@
     text-align: center;
     background-color: white;
     margin: 1%;
+
+    .fotoPersonaOpinion{
+        width: 50%;
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+
+    .nombrePersonaOpinion{
+        padding-bottom: 20%;
+    }
 }
 
 .seccionOpiniones{
-    height: calc(100vh + 150px);
+    /*height: calc(100vh + 150px);*/
     background-image: url(../imagenes/opiniones/2.jpg);
     background-attachment: fixed;
     background-size: cover;
+    padding-bottom: 30px;
+
+    .tituloNuestrosClientes{
+        text-align: center;
+        padding-bottom: 1%;    
+        padding-top: 6%;
+         /*padding-bottom: 25px;    
+        padding-top: 100px;*/
+    }
+    
 }
 
-.nombrePersonaOpinion{
-    padding-bottom: 20%;
-}
