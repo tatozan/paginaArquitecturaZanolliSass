@@ -1,0 +1,47 @@
+.contenedorCarousel{
+    margin-left: 18%;
+    margin-right: 18%;
+    /*margin-top: 2%;*/
+}
+
+//Override clase de bootstrap para cambiar los indicadores del carrusel
+.carousel-indicators [data-bs-target] {
+    /*position: relative;*/
+    width: 0.7vw;
+    height: 0.7vw;
+    border: none;
+    border-radius: 0.7vw;
+    /*border-radius: 10%;*/
+  }
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 2vw;
+  height: 2vw;
+}
+
+.contenedorDescripcionProyecto{
+    margin-top: 2%;
+}
+
+/*.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }*/
+
+.textoDescripcionProyecto{
+  text-align: center;
+  font-size: 0.7vw;
+}
+
+.tituloProyectoGaleria{
+  text-align: center;
+  font-size: 0.9vw;
+
+
+}
