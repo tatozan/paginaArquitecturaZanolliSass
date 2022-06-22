@@ -1,0 +1,127 @@
+
+@import "variables";
+@import "init";
+@import "bootstrap-menu";
+@import "index-box";
+@import "containers";
+@import "article";
+@import "aside";
+@import "footer";
+@import "contact-form";
+
+
+
+.article-image{
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.flex{
+    display: flex;
+    gap:1em
+}
+
+.flex > .date-of-the-article{
+    text-transform: uppercase;
+}
+
+.article-title{
+    font-size: 2rem;
+    color: black;
+    margin: 0 3.8em 1em 0;
+}
+
+
+.article-text-container >*{
+    margin-bottom: 2em;
+}
+
+.article-sub-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.article-text-container{
+    line-height: 28px;
+}
+
+.article-text-container:last-child{
+    margin-bottom: 4em;
+}
+
+.article-list, 
+.article-list-ordered{
+    margin-left: 2em;
+}
+
+.article-list > li{
+    list-style: square;
+}
+
+.author-name{
+    color: #FE6935;
+}
+
+.my-title-color{
+    color: #FE6935;
+    font-weight: bold;
+}
+
+/* MOBILE FIRST*/
+.related-post-list-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three";
+    gap: 1.5rem;
+    margin-inline: auto;
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+
+.related-post-list:nth-child(1){
+    grid-area: one;
+}
+
+.related-post-list:nth-child(2){
+    grid-area: two;
+}
+
+.related-post-list:nth-child(3){
+    grid-area: three;
+}
+
+.related-link{
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 800;
+    color: #FE6935;
+}
+
+
+@media screen and (min-width: 38em) {
+    .related-post-list-grid {
+        grid-template-areas:
+        "one two"
+        "three three";
+    }
+  }
+  
+@media screen and (min-width: 45em) {
+    .related-post-list-grid {
+      grid-template-areas:
+       'one two three';
+    }
+}
+  
+.author-info{
+    padding: 30px;
+    border: 5px solid #EDF1F3;
+    margin-bottom: 4em;
+}
+
+.related-material{
+    font-weight: 100;
+}

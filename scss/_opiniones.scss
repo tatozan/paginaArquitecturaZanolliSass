@@ -19,9 +19,8 @@
 }
 
 .seccionOpiniones{
-    /*height: calc(100vh + 150px);*/
     background-image: url(../imagenes/opiniones/2.jpg);
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: cover;
     padding-bottom: 30px;
 
@@ -29,8 +28,6 @@
         text-align: center;
         padding-bottom: 1%;    
         padding-top: 6%;
-         /*padding-bottom: 25px;    
-        padding-top: 100px;*/
     }
     
 }

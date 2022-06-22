@@ -1,0 +1,130 @@
+footer{
+    width: 100%;
+}
+
+.filaFooter{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 2rem;
+    border-bottom: 2px solid map-get($coloresSitio, gris_claro);
+    padding-bottom: 2rem;
+
+    .columnaFooter1{
+        margin-top: 2.6rem;
+    }
+
+    .columnaFooter{
+        margin-top: 5%;
+    }
+
+    
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+.emailFooter{
+    border-bottom: 3px solid map-get($coloresSitio, gris_claro);
+}
+
+.itemEnlaceFooter{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.fraseFooter{
+    text-align: left;
+}
+
+.formularioFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid map-get($coloresSitio, gris_claro);
+    padding-bottom: 1rem;
+}
+
+.inputEmailFooter{
+    width: 100%;
+    background: transparent;
+    color: map-get($coloresSitio, gris_claro2);
+    border: 0;
+    outline: none;
+}
+
+.buttonEmailFooter{
+    background: transparent;
+    border: 0;
+    /*atributo que va por fuera del borde y pegado*/
+    outline: none;
+    cursor: pointer;
+}
+
+.fa-regular{
+    color: map-get($coloresSitio , gris_claro2);
+    margin-right: 0.6rem;
+}
+
+.fa-solid{
+    margin-left: 0.6rem;
+}
+
+.contenedorFooter{
+    background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+    /*padding-top: 5%;*/
+}
+
+.listaEnlacesFooter{
+    padding-left: 0;
+}
+
+.tituloFooter{
+    text-decoration-line: underline;
+    /*grosor del subrayado*/
+    text-decoration-thickness: 0.2rem;
+    font-weight: 700;
+    color: map-get($coloresSitio , gris_oscuro);
+    margin-bottom: 1rem;
+}
+
+.textoDatosFooter{
+    margin-bottom: 0.5rem;
+}
+
+.textoCopyright{
+    text-align: center;
+}
+
+.contenedorCopyrightSitio{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.textoTelefonoFooter{
+    font-size: 1rem;
+    font-weight: 700;
+    color: map-get($coloresSitio , gris_oscuro);
+}
+
+
+.redesSocialesFooter .fa-brands {
+    
+    width: 2.7rem;
+    height: 2.7rem;
+    /*circulo perfecto*/
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.7rem;
+    font-size: 2rem;
+    color: map-get($coloresSitio , gris_oscuro);
+    background-color: map-get($coloresSitio , gris_claro);
+    margin-top: 2.7rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}

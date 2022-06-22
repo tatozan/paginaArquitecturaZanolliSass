@@ -1,0 +1,73 @@
+/************************************
+FORMULARIO DE CONTACTO
+************************************/
+
+
+#formulario {
+
+    .form-style {
+        margin: 30px 0;
+        max-width: 480px;
+        padding: 0;
+
+        /* Filas del Formulario */
+        li {
+            padding: 0;
+            display: block;
+            list-style: none;
+            margin: 18px 0 0 0;
+
+            /* Etiqueta de cada fila */
+            label {
+                margin: 0 0 3px 0;
+                padding: 0px;
+                display: block;
+                font: 1em "proxima-nova", Verdana, Arial, serif;
+                font-weight: bold;
+                .required {
+                    color: red;
+                }
+            }
+            
+            .divided {
+                width: 49.5%;
+            }
+
+            /* Ancho de los campos que ocupan una sola columna */
+            .full-long {
+                width: 100%
+            }
+
+            input[type=text],
+            input[type=email],
+            textarea {
+                box-sizing: border-box;
+                border: 1px solid #BEBEBE;
+                padding: 10px;
+                margin: 0px;
+                outline: none;
+                font-size: 0.9em;
+
+                &:hover{
+                    box-shadow: 0 0 8px #88D5E9;
+                    border: 1px solid #88D5E9;
+                }
+
+
+            }
+            /* Boton Submit*/
+            input[type=submit] {
+                background: #4B99AD;
+                padding: 10px 15px 10px 15px;
+                border: none;
+                color: #fff;
+
+                &:hover{
+                    background: #4691A4;
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+}

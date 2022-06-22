@@ -8,6 +8,8 @@ h3{
 }
 
 .tituloPrincipal{
+    
+    text-align: center;
     font-weight: 600;
     color: map-get($coloresSitio, gris_oscuro);
     margin-bottom: 25px;
@@ -19,6 +21,11 @@ p{
 }
 
 .separadorDeSeccion{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: map-get($coloresSitio , gris_claro2);
 }

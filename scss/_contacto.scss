@@ -17,6 +17,7 @@
         /*padding: 50px 30px;*/
         padding-right: 30px;
         padding-left: 10px;
+
         .fraseMantenteEnContacto{
             font-weight:bold;
             font-size: 2.3rem;
@@ -60,12 +61,8 @@
         padding: 70px 3%;
         height: 550px;
         background-color: white;
-        /*width: 45%;*/
-        /*flex: 60%;*/
         box-shadow: map-get($coloresSitio, blanco) 0px 7px 29px 0px;
         border-radius: 20px;
-        /*padding: 50px 30px;*/
-        /*margin-left: 90px;*/
         min-width: 315px;
 
         .tituloContacto{
@@ -101,6 +98,12 @@
         margin-top: 40px;
         border: 0;
         border-radius: 15px;
+        transition-duration: 0.4s;
+    }
+
+    .botonEnviarFormulario:hover{
+        background-color: map-get($coloresSitio, celeste_logo);
+        color: white;
     }
 
     .botonBorrarFormulario{
@@ -112,8 +115,13 @@
         margin-top: 40px;
         border: 0;
         border-radius: 15px;
+        transition-duration: 0.4s;
     }
 
+    .botonBorrarFormulario:hover{
+        background-color: red;
+        color: white;
+    }
     .inputContacto{
         width: 100%;
         border-top: 0;

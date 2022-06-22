@@ -12,14 +12,23 @@
     <link rel="icon" href="/imagenes/favicon.png">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
+    <!-- ICONOS FONTAWESOME.COM-->
+    <script src="https://kit.fontawesome.com/e409223520.js" crossorigin="anonymous"></script>
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- PROGRESS BAR -->
+    <script src="/javascripts/jquery-3.5.1.min.js"></script>
+    <script src="/javascripts/prettify.min.js"></script>
+    <script src="/javascripts/topbar.js"></script>
+    <script src="/javascripts/topbar.min.js"></script>
+    
     <title>Arquitectura y diseño de proyectos</title>
+
 </head>
 
 <body>
     
-    <!-- MENU NAVEGACION-->
+    <!------------------------------------------- MENU NAVEGACION ------------------------------------------->
     <header class="encabezado">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -43,7 +52,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fuentesNavBar" aria-current="page" href="pages/novedades.html">Novedades</a>
+                            <a class="nav-link fuentesNavBar" aria-current="page" href="pages/novedades3.html">Novedades</a>
                         </li>
 
                         <li class="nav-item">
@@ -55,15 +64,19 @@
         </nav>
     </header>
     <main>
-        <!-- HOME -->
-        <div class="separadorDeSeccion"></div>
+        
+        <!------------------------------------------- HOME ------------------------------------------->
         <section id="inicio">
-            <h1 class="tituloPrincipal">NUESTRA VISIÓN</h1>
-            <p class="slogan">Diseñamos para el presente, con la conciencia del pasado, para un futuro desconocido. </p>            
-        </section>
+            <div class="contenedorTituloSloganInicio">
+                <h1 class="tituloInicio">NUESTRA VISIÓN</h1>
+                <p class="sloganInicio">Diseñamos para el presente, con la conciencia del pasado, para un futuro desconocido. </p>
+            </div>  
+            <video class="videoInicio" autoplay muted loop>
+                <source src="/imagenes/video-inicio.mp4" type="video/mp4">
+            </video>
+            <div class="capaVideoInicio"></div>
+        </section>  
 
-        <div class="separadorDeSeccion"></div>
-        <!-- OPINIONES -->
         <section class="seccionOpiniones">
             <h2 class = "tituloPrincipal tituloNuestrosClientes">NUESTROS CLIENTES</h2>
             <div class="container-fluid">
@@ -91,24 +104,73 @@
                         <h2 class="nombrePersonaOpinion">Daniela Martin</h2>
                         <p class="textoPersonaOpinion">Era justo lo que estaba buscando, para poder desarrollar la construcción de mi casa. Fueron muy prácticos y resolutivos a la hora de desarrollar el proyecto, lo cual me encanto. ¡Me acompañaron en todo momento! </p>
                     </div>
-
                 </div>
-
             </div>
             <div class="separadorDeSeccion"></div>
         </section>
 
     </main>
 
+    <!------------------------------------------- FOOTER ------------------------------------------->
     <footer>
-        <div class="redesSociales">
-            <a href="https://www.facebook.com" target="_blank"><img class ="redesIcon" src="/imagenes/logo_face.png" alt="logo facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img class ="redesIcon" src="/imagenes/logo_instagram.png" alt="logo instagram"></a>
-        </div>
+        <div class="contenedorFooter">
+            <div class="filaFooter">
+                <div class="columnaFooter1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.8886989764146!2d-68.82218268431538!3d-32.90111087691566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09484bd3ac55%3A0x27d39457ab044d07!2sPaso%20de%20los%20Patos%20382%2C%20Mendoza!5e0!3m2!1sen!2sar!4v1655317548653!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--<img class="logoFooter" src="/imagenes/inicio2.jpg" alt="logo">-->
+                    <!--<p class="fraseFooter">"La belleza perece en la vida, pero es inmortal en el arte"</p>-->
+                </div>
 
-        <p> Sitio web creado por Esteban Zanolli </p>
+                <div class="columnaFooter">
+                    <h3 class="tituloFooter">Estudio</h3>
+                    <p class="textoDatosFooter">Paso de los Patos 382</p>
+                    <p class="textoDatosFooter">Villa Nueva de Guaymallén</p>
+                    <p class="textoDatosFooter">Mendoza - Argentina</p>
+                    <p class="emailFooter">info@arandazanolliarq.com</p>
+                    <h4 class="textoTelefonoFooter">+5492613827347</h4>
+                </div>
+                    <div class="columnaFooter">
+                        <h3 class="tituloFooter">Links</h3>
+                        <ul class="listaEnlacesFooter">
+                            <li class="itemEnlaceFooter">
+                                <a href="#inicio">Inicio</a>
+                            </li>
+                            <li class="itemEnlaceFooter">
+                                <a href="pages/estudio.html">Estudio</a>
+                            </li>
+                            <li class="itemEnlaceFooter">
+                                <a href="pages/proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="itemEnlaceFooter">
+                                <a href="pages/novedades.html">Novedades</a>
+                            </li>
+                            <li class="itemEnlaceFooter">
+                                <a href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                <div class="columnaFooter">
+                    <h3 class="tituloFooter">Newsletter</h3>
+                    <form class="formularioFooter">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input class="inputEmailFooter" type="email" placeholder="Ingrese su email" requiered size="15">
+                        <button class="buttonEmailFooter" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+
+                    <div class="redesSocialesFooter">
+                        <i class="fa-brands fa-facebook-f"></i>   
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://api.whatsapp.com/send?phone=15551234567&text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Arquitectura." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorCopyrightSitio">
+                <p class="textoCopyright">Cacho Design Web © 2022 - Todos los Derechos Reservados</p>
+            </div>   
+        </div>
     </footer>
-    <!-- JavaScript Bundle with Popper -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -116,9 +178,6 @@
     <script>
         AOS.init();
     </script>
-
-    
-
 </body>
 
 </html>

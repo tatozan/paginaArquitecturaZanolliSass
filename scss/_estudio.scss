@@ -42,7 +42,6 @@
         
         .contenedorPersona{
 
-            /*border: 1px solid map-get($coloresSitio, gris_claro);*/
             box-shadow: map-get($coloresSitio, gris_claro) 0px 7px 29px 0px;
             border-radius: 20px;
             padding-bottom: 30px;
@@ -60,22 +59,35 @@
                 align-items: center;
                 justify-content: center;
 
-                .contenedorRedesSocialesPersona{
-                    width: 100%;
-                    display: flex;
-                    justify-content:space-evenly;
-                }
-
-                .iconoRedesEstudio{
+                /*.iconoRedesEstudio{
                     height:40px;
                     width: 40px;
 
-                }
+                }*/
+
             }
         }
     }
 }
 
+.enlaceRedesSocialesPersona{
+    text-align: center;
+    .fa-brands{
+        width: 2.7rem;
+        height: 2.7rem;
+        /*circulo perfecto*/
+        border-radius: 50%;
+        text-align: center;
+        line-height: 2.7rem;
+        font-size: 2rem;
+        color: map-get($coloresSitio , gris_oscuro);
+        background-color: map-get($coloresSitio , gris_claro);
+        margin-top: 2.7rem;
+        margin: 1rem;
+        cursor: pointer;
+
+    }
+}
 
 
 

@@ -1,0 +1,21 @@
+
+/********************************
+MENU CON BOOTSTRAP
+*********************************/
+
+/* Links  */
+.main-menu ul li a{
+    text-decoration: none;
+    color: #616161; 
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 700;
+    padding: 1.5em !important;
+
+    &:hover{
+        color:#222;
+        background-color: #FFD117;   
+    }
+
+}
+

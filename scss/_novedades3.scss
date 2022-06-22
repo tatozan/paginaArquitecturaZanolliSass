@@ -1,0 +1,122 @@
+.seccionNovedades3{
+    /*height: 100vh;*/
+    /*background-color: #151320;*/
+    /*display: grid;
+    place-items: center center;*/
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+        padding: 20px;
+        grid-gap: 40px;
+
+        .tarjeta{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            /*background-color: #1c1b29;*/
+            /*border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.18);*/
+            box-shadow: map-get($coloresSitio, gris_claro) 0px 7px 29px 0px;
+            border-radius: 20px;
+
+            .imagenNovedad3{
+                width: 100%;
+                display: block;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .detalles{
+                padding: 20px 10px;
+                text-align: left;
+
+                .tituloNovedad3{
+                    color: map-get($coloresSitio, gris_oscuro);
+                    font-weight:600;
+                    font-size: 1.4rem;
+                    margin-bottom: 1.6rem;
+                }
+
+                .temaNovedad3{
+                    color: map-get($coloresSitio, gris_oscuro);
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    margin: 0.6rem 0 1.6rem 0;
+                }
+                
+                .descripcionNovedad3{
+                    color: map-get($coloresSitio, gris_claro2);
+                    font-size: 1.1rem;
+                    line-height: 30px;
+                }
+
+                .botonEnviarFormulario3{
+                    color: black;
+                    /*background-color: linear-gradient(4deg, rgba(226,15,230,1) 0%, rgba(47,115,176,1) 99%);*/
+                    width: 39%;
+                    padding: 10px;
+                    margin-top: 40px;
+                    border: 0;
+                    border-radius: 15px;
+                    transition-duration: 0.4s;
+
+                    &:hover{
+                        background-color: map-get($coloresSitio, celeste_logo );
+                        color: white;
+                    }
+                    
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+
+
+/*.contenedorImagenNovedad3{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}*/
+
+
+
+/*.contenedorImagenNovedad3:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}*/
+
+/*.tarjeta1>.contenedorImagenNovedad3:after{
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+}
+
+.tarjeta2>.contenedorImagenNovedad3:after{
+    background-image: linear-gradient(
+        135deg,
+        #2bdce3,
+        #42ffdb
+    );
+}
+
+.tarjeta3>.contenedorImagenNovedad3:after{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+}*/
+
+
+
