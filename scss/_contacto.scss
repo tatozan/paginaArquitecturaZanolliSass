@@ -1,6 +1,6 @@
 /************************************** CONTACTO **************************************/
 .seccionContactoContenedor{
-    background-image: url(../imagenes/contacto/2.jpg);
+    background-image: url(../imagenes/contacto/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -13,24 +13,26 @@
 
     .datosContacto{
         width: 100%;
-        /*flex: 40%;*/
-        /*padding: 50px 30px;*/
-        padding-right: 30px;
-        padding-left: 10px;
+        padding-right: 1.88rem;
+        padding-left: 0.63rem;
+
+        .enlaceMailTo{
+            text-decoration: none;
+        }
 
         .fraseMantenteEnContacto{
-            font-weight:bold;
+            font-weight: bold;
             font-size: 2.3rem;
             color: map-get($coloresSitio, celeste_logo);
             width: 100%;
-            margin-top: 90px;
-            /*margin-bottom: 17px;*/
+            margin-top: 5.63rem;
         }
         
         .textoContacto{
             color: map-get($coloresSitio, gris_claro2);
             font-size: 1.1rem;
             width: 100%;
+            
         }
         
         .tituloTextoContacto{
@@ -39,89 +41,110 @@
             color: map-get($coloresSitio, celeste_logo);
             width: 100%;
         }
+
         .contenedorRedesSociales{
-            width: 80%;
+            width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             border-top: 2px solid map-get($coloresSitio, gris_claro);
+
             .enlaceRedesSociales{
-                .iconoRedes{
-                    margin: 15px;
-                    width: 50px;
-                    height: 50px;
+                .fa-brands{
+                    width: 2.7rem;
+                    height: 2.7rem;
+                    /*circulo perfecto*/
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 2.7rem;
+                    font-size: 2rem;
+                    color: map-get($coloresSitio , gris_oscuro);
+                    background-color: map-get($coloresSitio , gris_claro);
+                    margin-top: 2.7rem;
+                    margin: 1rem;
+                    cursor: pointer;
+                    transition-duration: 0.4s;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+                
+                .iconoRedesFacebook:hover{
+                    background-color: map-get($coloresSitio, facebook);
+                }
+
+                .iconoRedesInstagram:hover{
+                    background-color: map-get($coloresSitio, instagram);
+                }
+
+                .iconoRedesWhatsapp:hover{
+                    background-color: map-get($coloresSitio, whatsapp);
                 }
             }
         }   
-
     }
 
     .formularioContacto{
-        margin-right: 10px;
-        padding: 70px 3%;
-        height: 550px;
+        margin-right: 0.63rem;
+        padding: 4.38rem 3%;
+        height: 34.38rem;
         background-color: white;
-        box-shadow: map-get($coloresSitio, blanco) 0px 7px 29px 0px;
-        border-radius: 20px;
-        min-width: 315px;
+        box-shadow: map-get($coloresSitio, blanco) 0px 0.44rem 1.81rem 0px;
+        border-radius: 1.25rem;
+        min-width: 19.69rem;
 
         .tituloContacto{
-            padding-top: 40x;
-            padding-bottom: 20px;
+            padding-bottom: 1.25rem;
             text-align: center;
             font-size: 1.4rem;
-            /*width: 100%;*/
+            color: map-get($coloresSitio , gris_oscuro);
         }
     }
 }
 
 
 .formularioContactoCampos{
-    /*display: flex;
-    flex-direction: column;
-    align-items:space-around;*/
-    /*row-gap: 30px;*/
-
     .etiquetaContacto{
         color: map-get($coloresSitio, gris_claro2);
-        /*width: 100%;*/
         text-align: left;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .botonEnviarFormulario{
         color: black;
         background-color: linear-gradient(4deg, rgba(226,15,230,1) 0%, rgba(47,115,176,1) 99%);
         width: 20%;
-        padding: 5px;
+        padding: 0.31rem;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 2.5rem;
         border: 0;
-        border-radius: 15px;
+        border-radius: 0.94rem;
         transition-duration: 0.4s;
-    }
 
-    .botonEnviarFormulario:hover{
-        background-color: map-get($coloresSitio, celeste_logo);
-        color: white;
+        &:hover{
+            background-color: map-get($coloresSitio, celeste_logo);
+            color: white;
+        }
     }
 
     .botonBorrarFormulario{
         color: black;
         border-color: map-get($coloresSitio, celeste_logo);
         width: 20%;
-        padding: 5px;
+        padding: 0.31rem;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 2.5rem;
         border: 0;
-        border-radius: 15px;
+        border-radius: 0.94rem;
         transition-duration: 0.4s;
+
+        &:hover{
+            background-color: red;
+            color: white;
+        }
     }
 
-    .botonBorrarFormulario:hover{
-        background-color: red;
-        color: white;
-    }
     .inputContacto{
         width: 100%;
         border-top: 0;
@@ -135,7 +158,7 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            border-color: map-get($coloresSitio, celeste_logo);;
+            border-color: map-get($coloresSitio, celeste_logo);
         }                    
     }   
 
@@ -151,10 +174,9 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            border-color:map-get($coloresSitio, celeste_logo);
+            border-color: map-get($coloresSitio, celeste_logo);
         }
     }
-
 }
 
 

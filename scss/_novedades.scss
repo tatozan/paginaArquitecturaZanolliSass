@@ -1,33 +1,123 @@
+.seccionNovedades{
+    margin-top: 5%;
+    margin-bottom: 4%;
+    
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(17.5rem, 1fr));
+        padding: 1.25rem;
+        grid-gap: 2.5rem;
 
-.contenedorArticulo{
-    border: 1px solid map-get($coloresSitio, gris_claro);
-    border-top: 0;
-    padding: 20px;
+        .tarjeta{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            box-shadow: map-get($coloresSitio, gris_claro) 0px 0.44rem 1.8rem 0px;
+            border-radius: 1.25rem;
 
-    .articulo{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        row-gap: 20px;
-
-        .contenedorImagenArticulo{
-            .imagenArticulo{
-                width: 320px;
-                height: 320px;
+            .imagenNovedad{
+                width: 100%;
+                display: block;
+                border-radius: 1.25rem 1.25rem 0 0;
             }
-        }
-        .textoContenedor{
-            padding-left: 10px;
 
-            div{
-                .tituloArticulo{
-                    text-align: left;
+            .detalles{
+                padding: 1.2rem 1rem;
+                text-align: left;
+
+                .contenedorTituloNovedad{
+                    min-block-size: 6.25rem;
+                    writing-mode: horizontal-tb;
+
+                    .tituloNovedad{
+                        color: map-get($coloresSitio, gris_oscuro);
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        margin-bottom: 1.6rem;
+                    }
+                 }
+                 
+                .temaNovedad{
+                    color: map-get($coloresSitio, gris_oscuro);
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    margin: 0.6rem 0 1.6rem 0;
+                }
+                
+                .contenedorTextoNovedad{
+                    min-block-size: 20.7rem;
+                    writing-mode: horizontal-tb;
+
+                    .descripcionNovedad{
+                        color: map-get($coloresSitio, gris_claro2);
+                        font-size: 1.1rem;
+                        line-height: 30px;
+                    }
+                }
+                
+                .botonEnviarFormulario{
+                    color: black;
+                    width: 39%;
+                    padding: 0.63rem;
+                    margin-top: 2.5rem;
+                    border: 0;
+                    border-radius: 1rem;
+                    transition-duration: 0.4s;
+
+                    &:hover{
+                        background-color: map-get($coloresSitio, celeste_logo);
+                        color: white;
+                    }     
                 }
             }
-        }
-        
-
+        }        
     }
-}    
+}
+
+
+
+/*.contenedorImagenNovedad{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}*/
+
+
+
+/*.contenedorImagenNovedad:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}*/
+
+/*.tarjeta1>.contenedorImagenNovedad:after{
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+}
+
+.tarjeta2>.contenedorImagenNovedad:after{
+    background-image: linear-gradient(
+        135deg,
+        #2bdce3,
+        #42ffdb
+    );
+}
+
+.tarjeta3>.contenedorImagenNovedad:after{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+}*/
+
+
 

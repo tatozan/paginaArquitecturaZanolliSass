@@ -2,16 +2,51 @@
 /* ESTABLEZCO TAMANO PARA CELULAR */
 @media screen and (min-width: 320px) and (max-width: 599px){
 
-/************************************** INICIO **************************************/
-    /*#inicio{
-        background-size: contain;
-        height: 200px;
+/************************************** HEADER *****************************************/
+    .fuentesNavBar{
+        line-height: 1.88rem;
+        display: inline;     
+    }
+    
+    .listaEnlacesHeader{
+        text-align: center;
+    }
 
-        .tituloPrincipal{
-            padding-top: 0rem;
-            margin-top: 0px;
+/************************************** OPINIONES **************************************/
+    .seccionOpiniones{
+        background-image: none;
+        height: max-content;
+    }
+
+    .columnaOpinionPersona{
+        padding-top: 1.9rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        margin-bottom: 1.9rem;
+        width: 90%;
+
+        .fotoPersonaOpinion{
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 40%;
         }
-    }*/
+
+        .nombrePersonaOpinion{
+            padding-bottom: 0;
+            width: 40%;
+        }
+
+        .textoPersonaOpinion{
+            text-align: center;
+            width: 100%;
+            margin-top: 8%;
+        }
+    }
+
 
 /************************************** ESTUDIO **************************************/
     .estudio{ 
@@ -23,15 +58,18 @@
                 max-width: 90%;
             }
         }
+
         .datosPersona{
             flex-direction: column;
-            row-gap: 30px;
+            gap: 1.2rem;
         }
     }
 
 /************************************** PROYECTOS **************************************/
-    .columnaGaleria{
-        flex: 100%;
+    .filaGaleria{
+        .columnaGaleria{ 
+            flex: 100%;
+        }
     }
 
     .textoDescripcionProyecto{
@@ -44,9 +82,13 @@
         margin-bottom: 0.5rem;
     }
 
-    
-/************************************** CONTACTO **************************************/
+/********************************* GALERIA-PROYECTO ***********************************/
+    //Override clase de bootstrap para cambiar los indicadores del carrusel
+    .carousel-indicators [data-bs-target] {
+        display: none;
+    }
 
+/************************************** CONTACTO **************************************/
     .seccionContactoContenedor{
         background-image: none;
         flex-wrap: wrap;
@@ -55,13 +97,12 @@
         .datosContacto{
             padding: 0px 0px;
             .fraseMantenteEnContacto{
-                margin-top: 40px;
+                margin-top: 2.5rem;
             }
 
             .contenedorRedesSociales{
                 width: 100%;
-                justify-content: center;
-                
+                justify-content: center;            
             }
         }
 
@@ -72,116 +113,72 @@
         }
     }
 
-        
 /************************************** NOVEDADES **************************************/
-    .contenedorArticulo{
-        .articulo{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .textoContenedor{
-                padding-left: 0px; 
-
-                div{ 
-                    .tituloArticulo{
-                        text-align: center;
-                    }
-                }
-                div{
-                    .textoArticuloNovedades{
-                        text-align: justify;
-                    }
-                }
-            }
-            
-        }
-    } 
+    .contenedorTextoNovedad{
+        max-block-size: 18.8rem;
+    }
 
 /************************************** FOOTER **************************************/
-    .filaFooter{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
+    footer{
+        .contenedorFooter{    
+            .filaFooter{
+            flex-direction: column;
+            flex-wrap: wrap;
+            }
+        }
     }
 }
+
+
 /*Establezco medidas para medias queries pantallas grandes*/
 @media screen and (min-width: 600px) and (max-width: 992px){
 
+/************************************** HEADER *****************************************/
+    .fuentesNavBar{
+        line-height: 1.88rem;
+        display: inline;    
+    }
+
+    .listaEnlacesHeader{
+        text-align: center;
+    }
+
+/************************************** ESTUDIO **************************************/
+    .estudio{
+        .datosPersona{
+            gap: 1.2rem;
+        }
+    }
+
 /************************************** PROYECTOS **************************************/
-    .columnaGaleria{
-        flex: 50%;
+    .filaGaleria{
+        /*puede estar dividida en dos columnas con flex 50% pero por una cuestión estética, lo dejé al 100%*/
+        .columnaGaleria{ 
+            flex: 100%;
+        }
     }
 
 /************************************** FOOTER **************************************/
-    .filaFooter{
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        .columnaFooter1{
-            flex: 70%;
-            margin-top: 2rem;
+    footer{    
+        .filaFooter{
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-evenly;
         }
     }
 
-    .emailFooter{
-        border: none;
+    .columnaFooter1{
+        flex: 70%;
+        margin-top: 2rem;
     }
-
 }
 
-@media screen and (min-width: 320px) and (max-width: 575px){
-
-/************************************** OPINIONES **************************************/
-
-    .columnaOpinionPersona{
-        padding-top: 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: white;
-        margin-bottom: 30px;
-
-        .fotoPersonaOpinion{
-            padding-top: 0;
-            padding-bottom: 0;
-            width: 40%;
-        }
-
-        .nombrePersonaOpinion{
-            padding-bottom: 0;
-            width: 40%;
-
-        }
-
-        .textoPersonaOpinion{
-            text-align: center;
-            width: 100%;
-            margin-top: 8%;
-        }
-    }
-
-    .seccionOpiniones{
-        background-image: none;
-        height: max-content;
-    }
-
-}
 
 @media screen and (min-width: 600px) and (max-width: 788px){
+
 /************************************** FOOTER **************************************/
-    .filaFooter{
-        .columnaFooter1{
-            flex: 48%;
-            margin-top: 1.7rem;
-        }
+    .columnaFooter1{
+        flex: 48%;
+        margin-top: 1.7rem;
     }
-
-    .emailFooter{
-        border: none;
-    }
-
 }

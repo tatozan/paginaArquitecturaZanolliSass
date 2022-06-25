@@ -1,12 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-
-.bodyProyectos{
-    margin: 0;
-    padding: 0;
-}
-
 .filaGaleria{
     display: flex;
     flex-direction: row;
@@ -14,14 +5,55 @@
     padding: 2px;
     /*determino cuanto espacio ocupa el elemento flex dentro de su contenedor*/
     width: 100%;
-}
 
-.imagenGaleria{
-    padding: 2px;
-    width: 100%
-}
+    .columnaGaleria{
+        flex: 33.33%;
 
-.columnaGaleria{
-    flex: 33.33%;
-}
+        .contenedorImagenGaleria{
+            position: relative;
+            width: 100%;
 
+            .imagenGaleria{
+                display: block;
+                padding: 2px;
+                width: 100%
+            }
+
+            .contenedorImagenOverlayProyecto{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.25s;
+
+                &:hover{
+                    opacity: 1;
+                }
+
+                .enlaceProyectoOverlay{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    
+                    .tituloProyecto{
+                        color: #ffffff;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                }
+            }         
+        }        
+    }
+}

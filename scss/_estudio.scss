@@ -1,56 +1,48 @@
 /************************************** ESTUDIO **************************************/
 .estudio{
     background-color: map-get($coloresSitio, blanco);
+    margin-top: 5%;
+    margin-bottom: 5%;
 
     .nuestroEquipo{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* padding-top: 2rem;*/
-
-        h2{
-            margin-top: 80px;
-            margin-bottom: 15px;
-            font-size: 30px;
-        }
 
         .fraseNuestroEquipo{
-            font-size: 17px;
-            margin-top: 10px;
-            margin-bottom: 5px;
-            /*padding: 10px;*/
+            font-size: 1.06rem;
+            margin-top: 0.63rem;
+            margin-bottom: 0.31rem;
             text-align: center;
         }
         
         .fraseNuestroEquipoContinuacion{
-            font-size: 17px;
-            margin-top: 5px;
-            margin-bottom: 40px;
-            /*padding: 10px;*/
+            font-size: 1.06rem;
+            margin-top: 0.31rem;
+            margin-bottom: 2.5rem;
             text-align: center;
         }
     }
 
     .datosPersona{
         display: flex;
-        /* flex-direction por defecto esta en row, lo pongo para verlo explicito y recordar */
         flex-direction: row; 
         justify-content: center;
         align-items: center; 
-        gap: 30px;
+        gap: 1.9rem;
         
         .contenedorPersona{
 
-            box-shadow: map-get($coloresSitio, gris_claro) 0px 7px 29px 0px;
-            border-radius: 20px;
-            padding-bottom: 30px;
+            box-shadow: map-get($coloresSitio, gris_claro) 0px 0.4rem 1.8rem 0px;
+            border-radius: 1.25rem;
+            padding-bottom: 1.5rem;
 
             .imagenPersona{
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                padding-bottom: 10px;
-                height: 300px;
+                border-top-left-radius: 1.25rem;
+                border-top-right-radius: 1.25rem;
+                padding-bottom: 0.6rem;
+                height: 18.7rem;
             }
             
             .nombreTituloPersona{
@@ -58,13 +50,6 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-
-                /*.iconoRedesEstudio{
-                    height:40px;
-                    width: 40px;
-
-                }*/
-
             }
         }
     }
@@ -85,9 +70,20 @@
         margin-top: 2.7rem;
         margin: 1rem;
         cursor: pointer;
+        transition-duration: 0.4s;
 
+        &:hover {
+            color: white;
+        }
+    }
+
+    .iconoFacebookEstudio:hover {
+      background-color: map-get($coloresSitio, facebook);
+    }
+  
+    .iconoInstagramEstudio:hover {
+      background-color: map-get($coloresSitio, instagram);
     }
 }
-
 
 
