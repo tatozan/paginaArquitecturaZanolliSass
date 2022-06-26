@@ -674,42 +674,6 @@ footer {
 .wrapperFooterRedesSociales .contenedorIconoFooterRedSocial:hover span a i.fa-brands {
   color: white; }
 
-/*.redesSocialesFooter {
-    .fa-brands {
-        width: 2.7rem;
-        height: 2.7rem;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 2.7rem;
-        font-size: 2rem;
-        color: map-get($coloresSitio , gris_oscuro);
-        background-color: map-get($coloresSitio, gris_claro);
-        margin-top: 2.7rem;
-        margin-right: 1rem;
-        cursor: pointer;
-        transition-duration: 0.4s;
-  
-        &:hover {
-            color: white;
-        }
-    }
-  
-    .iconoFacebook:hover {
-        background-color: #3b5998;
-    }
-  
-    .iconoInstagram:hover {
-        background-color: #bc2a8d;
-    }
-  
-    .iconoWhatsapp:hover {
-        background-color: #25D366;
-    }
-}
-*/
-/*.fraseFooter{
-    text-align: left;
-}*/
 /* MEDIAS QUERIES */
 /* ESTABLEZCO TAMANO PARA CELULAR */
 @media screen and (min-width: 320px) and (max-width: 599px) {
@@ -818,3 +782,6 @@ footer {
   .columnaFooter1 {
     flex: 48%;
     margin-top: 1.7rem; } }
+
+.disclaimer {
+  display: none; }
